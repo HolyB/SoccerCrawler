@@ -34,11 +34,4 @@ class SoccerItem(Item):
     endkewinpercent=Field()
     endreturnrate=Field()
     endkaili=Field()
-class TencentItem(Item):  
-    name = Field()                # ְλ����  
-    catalog = Field()             # ְλ���  
-    workLocation = Field()        # �����ص�  
-    recruitNumber = Field()       # ��Ƹ����  
-    detailLink = Field()          # ְλ����ҳ����  
-    publishTime = Field()         # ����ʱ��  
 

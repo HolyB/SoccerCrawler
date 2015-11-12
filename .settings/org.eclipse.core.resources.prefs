@@ -5,4 +5,3 @@ encoding//soccer/misc/log.py=utf-8
 encoding//soccer/pipelines.py=utf-8
 encoding//soccer/spiders/nba_spider.py=utf-8
 encoding//soccer/spiders/soccer_spider.py=utf-8
-encoding//soccer/spiders/tencent_spider.py=utf-8

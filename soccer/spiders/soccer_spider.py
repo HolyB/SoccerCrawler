@@ -64,6 +64,7 @@ class soccerSpider(Spider):
                 Socceritem['league']=league[0] if league else None
                 print league
                 Socceritem['date']=date[0] if date else None
+                print date[0]
                 Socceritem['zhudui']=zhudui[0] if zhudui else None
                 Socceritem['startwinodd']=startwinodd[0] if startwinodd else None
                 Socceritem['startdrawodd']=startdrawodd[0] if startdrawodd else None
@@ -73,10 +74,12 @@ class soccerSpider(Spider):
                 Socceritem['drawpercent']=drawpercent[0] if drawpercent else None
                 Socceritem['returnrate']=returnrate[0] if returnrate else None
                 Socceritem['kedui']=kedui[0] if kedui else None
-                Socceritem['results']=results[0] if results else None
-                print zhudui
-                print kedui
+                print kedui[0]
+                Socceritem['result']=results[0] if results else None
+                print zhudui[0]
             else:
+                count+=1
+                print tr.extract()
                 endwinodd=tr.xpath('td[1]/text()').extract()
                 enddrawodd=tr.xpath('td[2]/text()').extract()
                 endloseodd=tr.xpath('td[3]/text()').extract()
